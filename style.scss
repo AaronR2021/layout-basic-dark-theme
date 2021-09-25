@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600;1,700&display=swap");
+$links: rgb(196, 196, 196);
+$headers-text: white;
+$const-margin-top-block: 10vh;
+$p-text: grey;
+body {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.outline {
+  width: 100%;
+  max-width: 1024px;
+  padding: 10px;
+  margin: auto;
+  padding: 0px;
+  @media only screen and (max-width: 950px) {
+    & {
+      margin: 0;
+    }
+  }
+}
+.body-content {
+  padding: 20px;
+  margin-top: -97px;
+  background-color: rgba(34, 34, 34, 0.356);
+  position: relative;
+  @media only screen and (max-width: 400px) {
+    & {
+      margin: auto;
+      width: 100%;
+    }
+  }
+}
+nav {
+  margin-top: 0;
+  display: flex;
+  background-color: rgba(34, 34, 34, 0.356);
+  justify-content: space-between;
+  padding: 30px 10px;
+  @media only screen and (max-width: 512px) {
+    & {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.nav-right {
+  display: flex;
+  ul {
+    display: flex;
+    a {
+      text-decoration: none;
+      color: $links;
+      font-weight: 500;
+    }
+    li {
+      margin-right: 20px;
+      list-style-type: none;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: $const-margin-top-block;
+  img {
+    height: 300px;
+    @media only screen and (max-width: 974px) {
+      & {
+        height: 200px;
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+    color: $headers-text;
+    font-weight: 400;
+  }
+  p {
+    text-align: center;
+    color: $p-text;
+    max-width: 500px;
+  }
+  button {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    font-weight: 600;
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 255, 242),
+      rgb(28, 156, 241)
+    );
+  }
+}
+
+.cards {
+  margin-top: $const-margin-top-block;
+  display: flex;
+  flex-direction: column;
+  .row-card {
+    margin: 20px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media only screen and (max-width: 950px) {
+      & {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+    }
+  }
+  .card-indivisual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    @media only screen and (max-width: 950px) {
+      & {
+        margin-bottom: 40px;
+      }
+    }
+    h2 {
+      color: white;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    p {
+      text-align: center;
+      color: $p-text;
+      @media only screen and (max-width: 950px) {
+        & {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+
+.stay-productive {
+  margin-top: $const-margin-top-block;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    @media only screen and (max-width: 950px) {
+      & {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    img {
+      max-width: 40%;
+      @media only screen and (max-width: 950px) {
+        & {
+          max-width: 98%;
+        }
+      }
+    }
+  }
+}
+.container-text {
+  margin-left: 10vw;
+  margin-right: 30px;
+  @media only screen and (max-width: 950px) {
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  h2 {
+    text-align: start;
+    color: $headers-text;
+    font-weight: 500;
+    @media only screen and (max-width: 950px) {
+      & {
+        text-align: center;
+      }
+    }
+  }
+  p {
+    text-align: start;
+    color: $p-text;
+    max-width: 500px;
+    @media only screen and (max-width: 950px) {
+      & {
+        text-align: center;
+      }
+    }
+  }
+  .container-link-border {
+    @media only screen and (max-width: 950px) {
+      & {
+        align-self: center;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: darkturquoise;
+    display: flex;
+    justify-content: start;
+
+    img {
+      margin-left: 5px;
+      align-self: center;
+      height: 15px;
+    }
+  }
+}
+.container-link-border {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid darkturquoise;
+}
+
+.testamonials {
+  margin-top: $const-margin-top-block;
+  background-image: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: fit-content;
+  margin: 10px;
+  padding-bottom: 30vh;
+  @media only screen and (max-width: 950px) {
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.card-testamonial {
+  width: 100%;
+  max-width: 1000px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 10px;
+  @media only screen and (max-width: 950px) {
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0;
+    }
+  }
+}
+.textamonial-card {
+  height: fit-content;
+  background-color: rgb(9, 1, 12);
+  width: 300px;
+  margin-right: 10px;
+  margin-top: 35px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 6px rgba(216, 216, 216, 0.603);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-self: start;
+
+  @media only screen and (max-width: 350px) {
+    & {
+      width: 100%;
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 13px;
+  }
+}
+.testimonial-user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  img {
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  h2 {
+    font-size: 13px;
+    color: white;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+  p {
+    margin: 0;
+  }
+}
+.empty-20vh {
+  padding-bottom: 20vh;
+  width: 100%;
+  max-width: 1024px;
+}
+.footer-outline {
+  width: 100%;
+  max-width: 1024px;
+  background-color: black;
+  margin: 20px;
+  margin-top: 20vh;
+}
+.newsletters {
+  height: fit-content;
+  position: absolute;
+  bottom: -15vh;
+  left: 0;
+  right: 0;
+  left: 0;
+  max-width: 80%;
+  margin: auto;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 400px) {
+    & {
+      bottom: -15vh;
+    }
+  }
+  h2 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+    @media only screen and (max-width: 400px) {
+      & {
+        text-align: center;
+      }
+    }
+  }
+  p {
+    color: $links;
+    font-size: 14px;
+    margin: auto;
+    max-width: 500px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .sign-in-newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    input {
+      flex: 3;
+      padding: 10px;
+      width: 100%;
+      border-radius: 20px;
+      border: none;
+      margin-right: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      flex: 1;
+      border-radius: 20px;
+      border: none;
+      background-image: linear-gradient(
+        to right,
+        rgb(0, 255, 242),
+        rgba(28, 156, 241, 0.842)
+      );
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+
+.footer-outline {
+  max-width: 1024px;
+  padding: 10px;
+  margin: auto;
+  padding: 0px;
+  padding-top: 25vh;
+}
+//problem here
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  margin: auto;
+  margin-bottom: 5vh;
+  @media only screen and (max-width: 974px) {
+    & {
+      margin: auto;
+      align-items: center;
+    }
+  }
+  img {
+    height: 50px;
+    width: fit-content;
+    margin: 10px;
+    @media only screen and (max-width: 974px) {
+      & {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: space-between;
+  @media only screen and (max-width: 974px) {
+    & {
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+}
+.location {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  @media only screen and (max-width: 974px) {
+    & {
+      justify-content: center;
+      align-items: center;
+      padding-right: 10px;
+    }
+  }
+  @media only screen and (max-width: 402px) {
+    & {
+      width: 100%;
+    }
+  }
+  img {
+    width: 20px;
+    height: fit-content;
+    margin-top: 8px;
+  }
+  p {
+    margin: 0;
+    margin-left: 30px;
+    color: white;
+  }
+}
+
+.information-footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  @media only screen and (max-width: 974px) {
+    & {
+      margin-left: 0px;
+      justify-content: space-between;
+      align-items: space-between;
+      width: 100%;
+    }
+  }
+}
+.info-footer-indiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  img {
+    margin-top: 0px;
+    width: 20px;
+    height: fit-content;
+  }
+  p {
+    color: $links;
+    margin: 0;
+    margin-left: 8px;
+    margin-left: 20px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  @media only screen and (max-width: 974px) {
+    & {
+      justify-content: start;
+      align-items: start;
+      width: 90%;
+      margin-left: 20px;
+    }
+  }
+  ul {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    list-style: none;
+    color: $links;
+    margin: 0;
+  }
+  li {
+    padding-bottom: 10px;
+    margin: 0;
+  }
+}
